@@ -4,24 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>踩點日記</title>
-    <!-- Google material icons -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu_open"
-    />
-    <!-- End google material icons -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -30,8 +12,10 @@
         <div class="logo">
           <img src="imgs/logo-set.png" alt="" />
         </div>
-        <a class="btn">下載app</a>
-        <nav class="menu-icon">
+        <nav>
+          <a class="btn"
+            href="#"><span class="material-symbols-rounded"> arrow_downward </span></a
+          >
           <details>
             <summary></summary>
             <ul>
@@ -53,16 +37,30 @@
         </h2>
         <p>不只是拍照打卡，而是收藏人生中每個美味瞬間。</p>
         <ul class="carousel">
-          <li data-accName="item-1">page 1</li>
-          <li data-accName="item-2">page 2</li>
-          <li data-accName="item-3">page 3</li>
-          <li data-accName="item-4">page 4</li>
-          <li data-accName="item-5">page 5</li>
+          <li data-accName="item-1">
+            <img src="imgs/banner/1.jpg" alt="">
+          </li>
+          <li data-accName="item-2">
+            <img src="imgs/banner/2.jpeg" alt="">
+          </li>
+          <li data-accName="item-3">
+            <img src="imgs/banner/3.jpeg" alt="">
+          </li>
+          <li data-accName="item-4">
+            <img src="imgs/banner/4.jpeg" alt="">
+          </li>
+          <li data-accName="item-5">
+            <img src="imgs/banner/5.png" alt="">
+          </li>
         </ul>
       </section>
       <section id="Feature-1">
         <div class="container">
-          <h2></h2>
+          <h2>
+            從點餐到分享
+            <br />
+            一次包辦
+          </h2>
           <p></p>
           <p></p>
           <div class="item">
@@ -79,7 +77,7 @@
               <a href="" class="btn">瀏覽模板</a>
             </div>
             <div class="item-img">
-              <img src="imgs/template-group.png" alt="" />
+              <img src="imgs/feature-1.png" alt="" />
             </div>
           </div>
         </div>
@@ -97,10 +95,10 @@
               <p>
                 AI寫作助手依照你選擇的真實情緒生成生動文字。捕捉食材特色、口感層次、餐廳氛圍。讓回憶有溫度的文字陪伴。
               </p>
-              <a href="" class="btn"></a>
+              <a href="" class="btn">立即體驗</a>
             </div>
             <div class="item-img">
-              <img src="imgs/template-group.png" alt="" />
+              <img src="imgs/feature-2.png" alt="" />
             </div>
           </div>
         </div>
@@ -118,10 +116,10 @@
               <p>
                 自動整理美食足跡，生成年度報告。統計飲食偏好、探索軌跡、消費分析。精美視覺化呈現，重溫美好時刻。
               </p>
-              <a href="" class="btn"></a>
+              <a href="" class="btn">查看回顧樣本</a>
             </div>
             <div class="item-img">
-              <img src="imgs/template-group.png" alt="" />
+              <img src="imgs/feature-3.png" alt="" />
             </div>
           </div>
         </div>
@@ -132,32 +130,61 @@
           <p>聽完功能，也聽聽他們怎麼說。</p>
           <div class="feedback-group">
             <div class="feedback-item">
-              <p>終於找到適合我的美食記錄app！以前用筆記軟體超亂，這個排版模板真的太美了，朋友都問我怎麼做的。AI修圖功能超實用，餐廳燈光再暗也不怕。年度回顧讓我發現自己一年吃了127間餐廳，超有成就感！</p>
+              <span class="material-symbols-rounded"> format_quote </span>
+              <span class="material-symbols-rounded"> format_quote </span>
+              <p>
+                終於找到適合我的美食記錄app！以前用筆記軟體超亂，這個排版模板真的太美了，朋友都問我怎麼做的。AI修圖功能超實用，餐廳燈光再暗也不怕。年度回顧讓我發現自己一年吃了127間餐廳，超有成就感！
+              </p>
               <div class="card-header">
-                <div class="profile-photo"></div>
+                <div class="profile-photo">
+                  <img src="imgs/feedback-people/1.png" alt="" />
+                </div>
                 <div class="text-group">
-                  <h4>美食獵人Cindy</h4>
-                  <p>⭐⭐⭐⭐⭐</p>
+                  <h4>美食獵人 Cindy</h4>
+                  <span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span>
                 </div>
               </div>
             </div>
             <div class="feedback-item">
-              <p>身為美食部落客，這app幫我省了超多時間。AI文案助手寫出的描述比我自己寫的還生動，地圖功能讓我規劃美食路線超方便。模板更新很快，每次發文都有新鮮感，強烈推薦給愛記錄的人！</p>
+              <span class="material-symbols-rounded"> format_quote </span>
+              <span class="material-symbols-rounded"> format_quote </span>
+              <p>
+                身為美食部落客，這app幫我省了超多時間。AI文案助手寫出的描述比我自己寫的還生動，地圖功能讓我規劃美食路線超方便。模板更新很快，每次發文都有新鮮感，強烈推薦給愛記錄的人！
+              </p>
               <div class="card-header">
-                <div class="profile-photo"></div>
+                <div class="profile-photo">
+                  <img src="imgs/feedback-people/2.png" alt="" />
+                </div>
                 <div class="text-group">
-                  <h4>吃貨日常Leo</h4>
-                  <p>⭐⭐⭐⭐⭐</p>
+                  <h4>吃貨日常 Leo</h4>
+                  <span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span>
                 </div>
               </div>
             </div>
             <div class="feedback-item">
-              <p>很喜歡這個app的設計感，介面簡潔好用。評價篩選功能很實用，想吃義大利麵或日料時馬上找到口袋名單。唯一小建議是希望能加入好友功能，和朋友分享美食地圖會更棒！整體來說非常滿意。</p>
+              <span class="material-symbols-rounded"> format_quote </span>
+              <span class="material-symbols-rounded"> format_quote </span>
+              <p>
+                很喜歡這個app的設計感，介面簡潔好用。評價篩選功能很實用，想吃義大利麵或日料時馬上找到口袋名單。唯一小建議是希望能加入好友功能，和朋友分享美食地圖會更棒！整體來說非常滿意。
+              </p>
               <div class="card-header">
-                <div class="profile-photo"></div>
+                <div class="profile-photo">
+                  <img src="imgs/feedback-people/3.png" alt="" />
+                </div>
                 <div class="text-group">
                   <h4>珍珍愛吃</h4>
-                  <p>⭐⭐⭐⭐</p>
+                  <span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span
+                  ><span class="material-symbols-rounded">star_rate</span>
                 </div>
               </div>
             </div>
@@ -170,31 +197,47 @@
           <p>你最想要的功能，我們全都有。</p>
           <div class="feature-group">
             <div class="feature-card">
-              <div class="card-img"></div>
-              <div class="card-body">
-                <h3>地圖瀏覽</h3>
-                <p>在地圖上標記吃過的每間餐廳。視覺化美食版圖，快速規劃回訪路線。發現未探索區域，成為美食地圖達人。</p>
+              <div class="feature-card-img">
+                <img src="imgs/feature-card/1-map.png" alt="" />
+              </div>
+              <div class="feature-card-body">
+                <h4>地圖瀏覽</h4>
+                <p>
+                  在地圖上標記吃過的每間餐廳。視覺化美食版圖，快速規劃回訪路線。發現未探索區域，成為美食地圖達人。
+                </p>
               </div>
             </div>
             <div class="feature-card">
-              <div class="card-img"></div>
-              <div class="card-body">
-                <h3>評價篩選</h3>
-                <p>透過評分、標籤、價位、料理類型多重篩選。瞬間找到想要的餐廳。專屬美食資料庫，比任何app都懂你。</p>
+              <div class="feature-card-img">
+                <img src="imgs/feature-card/2-filter.png" alt="" />
+              </div>
+              <div class="feature-card-body">
+                <h4>評價篩選</h4>
+                <p>
+                  透過評分、標籤、價位、料理類型多重篩選。瞬間找到想要的餐廳。專屬美食資料庫，比任何app都懂你。
+                </p>
               </div>
             </div>
             <div class="feature-card">
-              <div class="card-img"></div>
-              <div class="card-body">
-                <h3>模板定期更新</h3>
-                <p>每月推出新排版模板，配合節慶與流行趨勢。從簡約到華麗風格，總有一款符合當下心情。</p>
+              <div class="feature-card-img">
+                <img src="imgs/feature-card/3-template.jpg" alt="" />
+              </div>
+              <div class="feature-card-body">
+                <h4>模板定期更新</h4>
+                <p>
+                  每月推出新排版模板，配合節慶與流行趨勢。從簡約到華麗風格，總有一款符合當下心情。
+                </p>
               </div>
             </div>
             <div class="feature-card">
-              <div class="card-img"></div>
-              <div class="card-body">
-                <h3>AI快速修圖</h3>
-                <p>一鍵優化美食照片，自動調整亮度、對比、飽和度。讓每道菜呈現最誘人樣貌，專注記錄體驗。</p>
+              <div class="feature-card-img">
+                <img src="imgs/feature-card/4-ai.jpg" alt="" />
+              </div>
+              <div class="feature-card-body">
+                <h4>AI快速修圖</h4>
+                <p>
+                  一鍵優化美食照片，自動調整亮度、對比、飽和度。讓每道菜呈現最誘人樣貌，專注記錄體驗。
+                </p>
               </div>
             </div>
           </div>
@@ -221,6 +264,12 @@
       </section>
       <section id="Freq-asked">
         <div class="container">
+          <h2>
+            有問題，
+            <br />
+            就有答案。
+          </h2>
+          <p>常見問答這裡看。</p>
           <details>
             <summary>App需要付費嗎？</summary>
             目前開發階段的App是免費的。
@@ -231,7 +280,8 @@
           </details>
           <details>
             <summary>可以匯入其他app的餐廳記錄嗎？</summary>
-            可以！我們支援從Google Maps、Instagram、其他筆記app匯入資料。只需在設定中選擇「匯入資料」，按照步驟操作即可。照片、文字、地點資訊都能完整保留。
+            可以！我們支援從Google
+            Maps、Instagram、其他筆記app匯入資料。只需在設定中選擇「匯入資料」，按照步驟操作即可。照片、文字、地點資訊都能完整保留。
           </details>
           <details>
             <summary>AI修圖會讓照片看起來很假嗎？</summary>
@@ -245,6 +295,10 @@
       </section>
       <section id="News">
         <div class="container">
+          <div class="news-intro">
+            <h2>最新消息</h2>
+            <p>開始記錄旅程，和我們一起。</p>
+          </div>
           <input
             type="radio"
             class="tabs-radio"
@@ -252,83 +306,94 @@
             name="news-tab"
             checked
           />
-          <label for="product">產品更新</label>
+          <label for="product" class="product-news">產品更新</label>
           <div class="news-group">
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
-                <div class="tag">產品更新</div>
+              <div class="news-card-img">
+                <span class="material-symbols-rounded"> web_traffic </span>
+                <div class="tag">開發進度</div>
               </div>
-              <div class="card-body">
-                <h3>2.5版本上線：全新「美食時光軸」功能</h3>
-                <p>推出時光軸瀏覽模式，按時間順序回顧美食旅程。新增「這天吃什麼」提醒功能，還有春節限定模板上架，讓你的年節聚餐記錄更有氛圍！</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>App介紹網站上線</h4>
+                <p>製作完成App的介紹網站，和網友分享app的概念和全新功能。</p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-02-01</div>
+              <div class="news-card-footer">2026-02-10</div>
             </div>
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
-                <div class="tag">功能強化</div>
+              <div class="news-card-img">
+                <span class="material-symbols-rounded"> developer_board </span>
+                <div class="tag">開發進度</div>
               </div>
-              <div class="card-body">
-                <h3>AI文案全面升級：支援10種寫作風格</h3>
-                <p>AI寫作助手新增文青、幽默、專業評論等10種風格選項。並優化辨識能力，能更精準描述料理特色。Premium用戶還可自訂專屬寫作風格。</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>完成figma prototype V1</h4>
+                <p>
+                  製作出第一版以iOS UI
+                  Kit為基礎的原型設計，並完成期中簡報和試用。
+                </p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-01-15</div>
+              <div class="news-card-footer">2026-02-04</div>
             </div>
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
-                <div class="tag"></div>
+              <div class="news-card-img">
+                <span class="material-symbols-rounded">
+                  desktop_landscape
+                </span>
+                <div class="tag">開發進度</div>
               </div>
-              <div class="card-body">
-                <h3>AI快速修圖</h3>
-                <p>一鍵優化美食照片，自動調整亮度、對比、飽和度。讓每道菜呈現最誘人樣貌，專注記錄體驗。</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>電腦網頁版上線</h4>
+                <p>使用html和css製作了踩點日記的首頁版型，傳達app設計概念。</p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer"></div>
+              <div class="news-card-footer">2026-01-06</div>
             </div>
           </div>
           <input type="radio" class="tabs-radio" id="food" name="news-tab" />
           <label for="food">美食趨勢</label>
           <div class="news-group">
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
+              <div class="news-card-img">
+                <img src="imgs/news/2-1.jpg" alt="" />
                 <div class="tag">美食趨勢</div>
               </div>
-              <div class="card-body">
+              <div class="news-card-body">
                 <h3>2026台北米其林指南公布：15家新入選餐廳</h3>
-                <p>米其林指南新增15間星級餐廳，其中2家獲得二星殊榮。平價美食「必比登推介」也新增20間，從傳統小吃到創新料理都入榜，快去朝聖打卡！</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+                <p>
+                  米其林指南新增15間星級餐廳，其中2家獲得二星殊榮。平價美食「必比登推介」也新增20間，從傳統小吃到創新料理都入榜，快去朝聖打卡！
+                </p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-02-05</div>
+              <div class="news-card-footer">2026-02-05</div>
             </div>
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
+              <div class="news-card-img">
+                <img src="imgs/news/2-2.jpg" alt="" />
                 <div class="tag">季節特輯</div>
               </div>
-              <div class="card-body">
-                <h3>春天限定！全台5大櫻花餐廳賞味指南</h3>
-                <p>春櫻綻放時節，精選5間結合賞櫻與美食的絕美餐廳。從陽明山景觀餐廳到武陵農場茶屋，邊賞花邊品味季節料理，記得提前預約卡位！</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>春天限定！全台5大櫻花餐廳賞味指南</h4>
+                <p>
+                  春櫻綻放時節，精選5間結合賞櫻與美食的絕美餐廳。從陽明山景觀餐廳到武陵農場茶屋，邊賞花邊品味季節料理，記得提前預約卡位！
+                </p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-01-25</div>
+              <div class="news-card-footer">2026-01-25</div>
             </div>
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
+              <div class="news-card-img">
+                <img src="imgs/news/2-3.jpg" alt="" />
                 <div class="tag">永續餐飲</div>
               </div>
-              <div class="card-body">
-                <h3>永續飲食新趨勢：台北10間環保友善餐廳推薦</h3>
-                <p>永續飲食成為新趨勢！整理10間實踐環保理念的優質餐廳，從在地食材到減塑包裝，用行動支持地球。美味與環保可以兼得，一起吃出改變！</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>永續飲食新趨勢：台北10間環保友善餐廳推薦</h4>
+                <p>
+                  永續飲食成為新趨勢！整理10間實踐環保理念的優質餐廳，從在地食材到減塑包裝，用行動支持地球。美味與環保可以兼得，一起吃出改變！
+                </p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-01-10</div>
+              <div class="news-card-footer">2026-01-10</div>
             </div>
           </div>
           <input
@@ -340,47 +405,69 @@
           <label for="journaling">情緒引導</label>
           <div class="news-group">
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
+              <div class="news-card-img">
+                <img src="imgs/news/3-1.jpeg" alt="" />
                 <div class="tag">情緒療癒</div>
               </div>
-              <div class="card-body">
-                <h3>心情低落時該吃什麼？用美食療癒自己的5個提案</h3>
-                <p>遇到挫折或心情不好時，飲食也能成為自我照顧的方式。從溫暖的湯品到甜點，分享5種適合不同情緒的療癒美食，記得善待自己的心情和胃。</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>心情低落時該吃什麼？用美食療癒自己的5個提案</h4>
+                <p>
+                  遇到挫折或心情不好時，飲食也能成為自我照顧的方式。從溫暖的湯品到甜點，分享5種適合不同情緒的療癒美食，記得善待自己的心情和胃。
+                </p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-02-03</div>
+              <div class="news-card-footer">2026-02-03</div>
             </div>
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
+              <div class="news-card-img">
+                <img src="imgs/news/3-2.jpeg" alt="" />
                 <div class="tag">記錄心法</div>
               </div>
-              <div class="card-body">
-                <h3>如何記錄讓你快樂的美食時光？3個寫作小技巧</h3>
-                <p>好的美食記錄不只寫「好吃」，更要捕捉當下的感受和氛圍。教你用五感描述、情境連結、對話記錄三個技巧，讓未來的自己重溫那份快樂。</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>如何記錄讓你快樂的美食時光？3個寫作小技巧</h4>
+                <p>
+                  好的美食記錄不只寫「好吃」，更要捕捉當下的感受和氛圍。教你用五感描述、情境連結、對話記錄三個技巧，讓未來的自己重溫那份快樂。
+                </p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-01-20</div>
+              <div class="news-card-footer">2026-01-20</div>
             </div>
             <div class="news-card">
-              <div class="card-img">
-                <img src="" alt="">
+              <div class="news-card-img">
+                <img src="imgs/news/3-3.jpeg" alt="" />
                 <div class="tag">生活態度</div>
               </div>
-              <div class="card-body">
-                <h3>獨自用餐也能很享受：一個人吃飯的儀式感提案</h3>
-                <p>一個人吃飯不是孤單，而是與自己相處的quality time。分享如何為solo dining創造儀式感，從選餐廳到記錄當下，享受專屬自己的美好食光。</p>
-                <a href="" class="btn-text">閱讀更多 →</a>
+              <div class="news-card-body">
+                <h4>獨自用餐也能很享受：一個人吃飯的儀式感提案</h4>
+                <p>
+                  一個人吃飯不是孤單，而是與自己相處的quality
+                  time。分享如何為solo
+                  dining創造儀式感，從選餐廳到記錄當下，享受專屬自己的美好食光。
+                </p>
+                <a href="#" class="btn-text">閱讀更多 →</a>
               </div>
-              <div class="card-footer">2026-01-08</div>
+              <div class="news-card-footer">2026-01-08</div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="container"></div>
+      <div class="container">
+        <h4>每一餐，都值得被好好記下。</h4>
+        <h5>關於我們</h5>
+        <h5>重點功能</h5>
+        <h5>常見問題</h5>
+        <h5>最新消息</h5>
+        <h5>法律與政策</h5>
+        <ul>
+          <li><a href="#">使用條款/服務條款</a></li>
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">Cookie政策</a></li>
+          <li><a href="#">退款政策（如有付費服務）</a></li>
+        </ul>
+        <p>© 2026 踩點日記. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
