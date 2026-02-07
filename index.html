@@ -13,10 +13,10 @@
           <img src="imgs/logo-set.png" alt="" />
         </div>
         <nav>
-          <a class="btn"
-            href="#"><span class="material-symbols-rounded"> arrow_downward </span></a
+          <a class="btn" href="#"
+            ><span class="material-symbols-rounded"> arrow_downward </span></a
           >
-          <details>
+          <details class="nav-for-m">
             <summary></summary>
             <ul>
               <li><a href="#Feature-1">重點功能</a></li>
@@ -25,32 +25,44 @@
               <li><a href="#News">最新消息</a></li>
             </ul>
           </details>
+          <ul class="nav-for-pc">
+              <li><a href="#Feature-1">重點功能</a></li>
+              <li><a href="#Feedback">使用心得</a></li>
+              <li><a href="#Freq-asked">常見問題</a></li>
+              <li><a href="#News">最新消息</a></li>
+            </ul>
         </nav>
       </div>
     </header>
     <main>
       <section id="Banner">
-        <h2>
-          毎一餐，
-          <br />
-          都値得被好好記下
-        </h2>
-        <p>不只是拍照打卡，而是收藏人生中每個美味瞬間。</p>
+        <div class="container">
+          <div class="app-frame"></div>
+          <img class="plate" src="imgs/logo-plate.png" alt="" />
+          <img class="pen" src="imgs/logo-pen.png" alt="" />
+          <h4>踩點日記</h4>
+          <h2>
+            毎一餐，
+            <br />
+            都値得被好好記下
+          </h2>
+          <p>收藏人生中每個美味瞬間。</p>
+        </div>
         <ul class="carousel">
           <li data-accName="item-1">
-            <img src="imgs/banner/1.jpg" alt="">
+            <img src="imgs/banner/1.jpg" alt="" />
           </li>
           <li data-accName="item-2">
-            <img src="imgs/banner/2.jpeg" alt="">
+            <img src="imgs/banner/2.jpeg" alt="" />
           </li>
           <li data-accName="item-3">
-            <img src="imgs/banner/3.jpeg" alt="">
+            <img src="imgs/banner/3.jpeg" alt="" />
           </li>
           <li data-accName="item-4">
-            <img src="imgs/banner/4.jpeg" alt="">
+            <img src="imgs/banner/4.jpeg" alt="" />
           </li>
           <li data-accName="item-5">
-            <img src="imgs/banner/5.png" alt="">
+            <img src="imgs/banner/5.png" alt="" />
           </li>
         </ul>
       </section>
@@ -61,8 +73,7 @@
             <br />
             一次包辦
           </h2>
-          <p></p>
-          <p></p>
+          <p>最貼心功能搶先看。</p>
           <div class="item">
             <div class="item-body">
               <h3>
@@ -140,7 +151,7 @@
                   <img src="imgs/feedback-people/1.png" alt="" />
                 </div>
                 <div class="text-group">
-                  <h4>美食獵人 Cindy</h4>
+                  <p>美食獵人 Cindy</p>
                   <span class="material-symbols-rounded">star_rate</span
                   ><span class="material-symbols-rounded">star_rate</span
                   ><span class="material-symbols-rounded">star_rate</span
@@ -160,7 +171,7 @@
                   <img src="imgs/feedback-people/2.png" alt="" />
                 </div>
                 <div class="text-group">
-                  <h4>吃貨日常 Leo</h4>
+                  <p>吃貨日常 Leo</p>
                   <span class="material-symbols-rounded">star_rate</span
                   ><span class="material-symbols-rounded">star_rate</span
                   ><span class="material-symbols-rounded">star_rate</span
@@ -179,7 +190,7 @@
                   <img src="imgs/feedback-people/3.png" alt="" />
                 </div>
                 <div class="text-group">
-                  <h4>珍珍愛吃</h4>
+                  <p>珍珍愛吃</p>
                   <span class="material-symbols-rounded">star_rate</span
                   ><span class="material-symbols-rounded">star_rate</span
                   ><span class="material-symbols-rounded">star_rate</span
@@ -244,17 +255,63 @@
         </div>
       </section>
       <section id="Highlight">
-        <div class="container"></div>
+        <div class="container">
+          <h3>超多亮點，超值得</h3>
+          <div class="highlight-group">
+            <div class="highlight-item">
+              <div class="icon-group">
+                <span class="material-symbols-rounded restaurant">
+                  restaurant
+                </span>
+                <span class="material-symbols-rounded bar"> local_bar </span>
+                <br />
+                <span class="material-symbols-rounded cafe"> local_cafe </span>
+                <span class="material-symbols-rounded takeout">
+                  takeout_dining
+                </span>
+              </div>
+              4種餐廳專屬引導紀錄
+            </div>
+            <div class="highlight-item">
+              <span class="material-symbols-rounded"> stacks </span>
+              <br />
+              多層回顧，更深入認識自己
+            </div>
+            <div class="highlight-item">
+              <div class="impress">3</div>
+              步驟，快速了解自己想法
+            </div>
+            <div class="highlight-item">
+              <span class="material-symbols-rounded"> sentiment_satisfied </span
+              ><span class="material-symbols-rounded"> sentiment_sad </span
+              >超多精選模板，適合不同心情的你
+            </div>
+            <div class="highlight-item">
+              <div class="impress red-gradient">1</div>
+              個app，就搞定內心記錄到分享
+            </div>
+            <div class="highlight-item">
+              <span class="material-symbols-rounded"> rocket_launch </span
+              ><br />新功能積極開發中
+            </div>
+          </div>
+        </div>
       </section>
       <section id="CTA">
         <div class="marquee">
           <div class="marquee-track">
-            <img src="imgs/stat/card-stat (1).png" alt="" />
-            <img src="imgs/stat/card-stat (2).png" alt="" />
-            <img src="imgs/stat/card-stat (3).png" alt="" />
-            <img src="imgs/stat/card-stat-2.png" alt="" />
-            <img src="imgs/stat/card-stat.png" alt="" />
-            <img src="imgs/stat/card-stat.png" alt="" />
+            <img src="imgs/CTA-marquee/01.png" alt="" />
+            <img src="imgs/CTA-marquee/02.png" alt="" />
+            <img src="imgs/CTA-marquee/03.png" alt="" />
+            <img src="imgs/CTA-marquee/04.png" alt="" />
+            <img src="imgs/CTA-marquee/05.png" alt="" />
+            <img src="imgs/CTA-marquee/06.png" alt="" />
+            <img src="imgs/CTA-marquee/07.png" alt="" />
+            <img src="imgs/CTA-marquee/08.png" alt="" />
+            <img src="imgs/CTA-marquee/09.png" alt="" />
+            <img src="imgs/CTA-marquee/10.png" alt="" />
+            <img src="imgs/CTA-marquee/11.png" alt="" />
+            <img src="imgs/CTA-marquee/12.png" alt="" />
           </div>
         </div>
         <div class="container">
@@ -359,7 +416,7 @@
                 <div class="tag">美食趨勢</div>
               </div>
               <div class="news-card-body">
-                <h3>2026台北米其林指南公布：15家新入選餐廳</h3>
+                <h4>2026台北米其林指南公布：15家新入選餐廳</h4>
                 <p>
                   米其林指南新增15間星級餐廳，其中2家獲得二星殊榮。平價美食「必比登推介」也新增20間，從傳統小吃到創新料理都入榜，快去朝聖打卡！
                 </p>
@@ -455,16 +512,20 @@
     <footer>
       <div class="container">
         <h4>每一餐，都值得被好好記下。</h4>
-        <h5>關於我們</h5>
-        <h5>重點功能</h5>
-        <h5>常見問題</h5>
-        <h5>最新消息</h5>
-        <h5>法律與政策</h5>
         <ul>
-          <li><a href="#">使用條款/服務條款</a></li>
-          <li><a href="#">隱私權政策</a></li>
-          <li><a href="#">Cookie政策</a></li>
-          <li><a href="#">退款政策（如有付費服務）</a></li>
+          <li><h5>關於我們</h5></li>
+          <li><h5>重點功能</h5></li>
+          <li><h5>常見問題</h5></li>
+          <li><h5>最新消息</h5></li>
+          <li>
+            <h5>法律與政策</h5>
+            <ul>
+              <li><a href="#">使用條款/服務條款</a></li>
+              <li><a href="#">隱私權政策</a></li>
+              <li><a href="#">Cookie政策</a></li>
+              <li><a href="#">退款政策（如有付費服務）</a></li>
+            </ul>
+          </li>
         </ul>
         <p>© 2026 踩點日記. All rights reserved.</p>
       </div>
