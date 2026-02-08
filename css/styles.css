@@ -65,10 +65,12 @@ summary {
 
 body {
   background-color: var(--bg-primary);
+  position: relative;
 }
 
 section {
   padding: var(--gap-section) 0;
+  scroll-margin-top: 56px;
 }
 
 .container {
@@ -130,12 +132,28 @@ h3 + p {
   background: var(--accent-dark);
 }
 
+.btn-circle {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 46px;
+}
+
 .seperator {
   width: 100%;
   height: 4px;
   border-radius: 4px;
   margin: var(--gap-secondary) 0;
   background: var(--bg-secondary);
+}
+
+.go-top {
+  position: fixed;
+  right: var(--m-padding-x);
+  bottom: var(--m-padding-x);
+  z-index: 3;
 }
 
 /* header */
@@ -155,24 +173,23 @@ header .container {
   flex-direction: row;
 }
 
+.logo {
+  display: flex;
+}
+
 .logo > img {
   height: 40px;
   object-fit: cover;
-}
-
-header .btn {
-  width: 32px;
-  height: 32px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  line-height: 46px;
 }
 
 nav {
   display: flex;
   align-items: flex-end;
   gap: var(--gap-primary);
+}
+
+.nav-for-pc {
+  display: none;
 }
 
 nav summary::after {
@@ -212,10 +229,6 @@ nav a {
   text-align: center;
 }
 
-.nav-for-pc {
-  display: hidden;
-}
-
 /* End header */
 
 /* Banner */
@@ -228,7 +241,7 @@ nav a {
 #Banner h4 {
   text-align: center;
   opacity: 0;
-  animation: 0.8s cubic-bezier(0.25, 1, 0.5, 1) 4s forwards appears;
+  animation: 0.8s cubic-bezier(0.25, 1, 0.5, 1) 3.8s forwards appears;
   color: var(--accent-dark);
   margin-bottom: var(--gap-primary);
   letter-spacing: 0.125rem;
@@ -252,9 +265,11 @@ nav a {
 @keyframes come-on-stage {
   0% {
     margin-top: 20px;
-    width: 110vw;
-    height: 110vw;
+    width: 90vw;
+    height: 90vw;
     box-shadow: none;
+    opacity: 0.8;
+    filter: blur(4px);
   }
 }
 
@@ -275,7 +290,7 @@ nav a {
   top: 8px;
   left: 50%;
   transform: translateX(-50%);
-  animation: 4s cubic-bezier(0.4, 1, 0.8, 1) 0s come-on-stage;
+  animation: 3.6s cubic-bezier(0.4, 1, 0.8, 1) 0s come-on-stage;
 }
 
 @keyframes appears {
@@ -295,14 +310,14 @@ nav a {
   font-style: normal;
   text-align: center;
   opacity: 0;
-  animation: 0.8s cubic-bezier(0.25, 1, 0.5, 1) 4.8s forwards appears;
+  animation: 1s cubic-bezier(0.25, 1, 0.5, 1) 4.5s forwards appears;
   text-indent: 2.7rem;
 }
 
 #Banner h2 + p {
   text-align: center;
   opacity: 0;
-  animation: 0.8s cubic-bezier(0.25, 1, 0.5, 1) 5s forwards appears;
+  animation: 0.8s cubic-bezier(0.25, 1, 0.5, 1) 4.8s forwards appears;
 }
 
 #Banner h2:first-child::before {
@@ -312,7 +327,7 @@ nav a {
 
 .carousel {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   gap: var(--gap-secondary);
   overflow-x: scroll;
@@ -328,6 +343,12 @@ nav a {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.carousel > li:first-child {
+  background: url(../imgs/hero-m.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel::scroll-button(*) {
@@ -378,17 +399,21 @@ li::scroll-marker:target-current {
   background-color: var(--accent-dark);
 }
 
-#Banner li img {
+.carousel li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.carousel li:nth-child(5) img {
+  object-fit: contain;
 }
 
 /* End banner */
 
 /* Feature-1 */
 
-.item-img img {
+.big-feature-item-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -446,14 +471,14 @@ li::scroll-marker:target-current {
 }
 
 .feedback-item > span:first-child {
-  top: calc((var(--gap-primary) + 2px) * -1);
-  left: 4vw;
+  top: calc((var(--gap-primary) + 8px) * -1);
+  left: 24px;
   transform: rotateZ(180deg);
 }
 
 .feedback-item > span:nth-child(2) {
-  bottom: calc((var(--gap-primary) + 2px) * -1);
-  right: 4vw;
+  bottom: calc((var(--gap-primary) + 8px) * -1);
+  right: 24px;
 }
 
 /* End feedback */
@@ -590,10 +615,19 @@ li::scroll-marker:target-current {
 
 /* CTA */
 
+#CTA {
+  background: var(--accent-dark);
+}
+
+#CTA .container {
+  margin-top: 40px;
+}
+
 #CTA h2 {
   text-align: center;
   font-size: 2.3rem;
   line-height: 3.5rem;
+  color: var(--label-dark-primary);
 }
 
 .marquee {
@@ -689,8 +723,8 @@ li::scroll-marker:target-current {
   }
 }
 
-#CTA .container {
-  background: transparent;
+.marquee:last-child img {
+  animation-direction: reverse;
 }
 
 /* End CTA */
@@ -832,7 +866,9 @@ li::scroll-marker:target-current {
 
 .news-card-footer {
   font-family: sans-serif;
-  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
   text-align: right;
   color: var(--label-secondary);
   padding-top: var(--gap-secondary);
@@ -886,18 +922,18 @@ footer p {
 
   /* Feature-1 */
 
-  .item {
+  .big-feature-item {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 120px;
   }
 
-  .item-body {
+  .big-feature-item-body {
     width: 50%;
   }
 
-  .item-img {
+  .big-feature-item-img {
     height: 400px;
   }
 
@@ -905,7 +941,7 @@ footer p {
 
   /* Feature-2 */
 
-  #Feature-2 .item-body {
+  #Feature-2 .big-feature-item-body {
     order: 1;
   }
 
@@ -917,13 +953,14 @@ footer p {
     display: flex;
     gap: var(--gap-secondary);
     overflow-x: scroll;
+    overflow-y: hidden;
+    height: 320px;
   }
 
   .feedback-item {
-    min-width: 339px;
+    min-width: 312px;
     text-align: justify;
     margin-top: var(--gap-primary);
-    margin-bottom: var(--gap-primary);
   }
 
   /* End feedback */
@@ -978,8 +1015,13 @@ footer p {
 
   /* header */
 
-  nav{
-    height: 100%;
+  header .container {
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    width: 71.6%;
+    justify-content: space-between;
   }
 
   .nav-for-m {
@@ -993,12 +1035,11 @@ footer p {
 
   .nav-for-pc {
     display: flex;
-    height: 100%;
+    margin: 0 var(--gap-primary);
   }
-  
 
   .nav-for-pc a {
-    width: 120px;
+    width: 100px;
     height: 100%;
   }
 
@@ -1008,8 +1049,64 @@ footer p {
 
   /* End header */
 
+  /* Banner */
+
+  .carousel {
+    min-height: 800px;
+  }
+
+  .carousel > li:first-child {
+    background: url(../imgs/hero-pc.jpg);
+    background-position: bottom;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* End banner */
+
+  /* Feature */
+
+  .big-feature-item {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-second);
+    justify-content: space-between;
+    padding: 10px 32px;
+    padding-bottom: 0;
+    height: 600px;
+  }
+
+  .big-feature-item-img {
+    width: 50%;
+    height: 100%;
+  }
+
+  .big-feature-item-img img {
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /* End feature */
+
+  /* Feedback */
+
+  .feedback-group {
+    overflow-x: auto;
+  }
+
+  /* End feedback */
+
   /* Footer */
+
   footer .container > ul {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  /* End footer */
 }
