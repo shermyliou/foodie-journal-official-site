@@ -821,7 +821,7 @@ li::scroll-marker:target-current {
 }
 
 .news-card-img {
-  height: 240px;
+  height: 140px;
   background: var(--bg-g-teritary);
   color: var(--accent-dark);
   border-radius: calc(var(--border-radius) - var(--gap-primary));
@@ -994,6 +994,10 @@ footer p {
 
   .news-card {
     flex: 0 0 32%;
+  }
+
+  .news-card-img{
+    height: 240px;
   }
 
   /* End news */
