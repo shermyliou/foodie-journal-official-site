@@ -154,6 +154,8 @@ h3 + p {
   right: var(--m-padding-x);
   bottom: var(--m-padding-x);
   z-index: 3;
+  background: var(--accent-dark);
+  mix-blend-mode: difference;
 }
 
 /* header */
