@@ -247,6 +247,11 @@ nav a {
   color: var(--accent-dark);
   margin-bottom: var(--gap-primary);
   letter-spacing: 0.125rem;
+  text-indent: 0.7%;
+}
+
+#Banner h4 span {
+  letter-spacing: 0.2188rem;
 }
 
 #Banner .container {
@@ -996,7 +1001,7 @@ footer p {
     flex: 0 0 32%;
   }
 
-  .news-card-img{
+  .news-card-img {
     height: 240px;
   }
 
